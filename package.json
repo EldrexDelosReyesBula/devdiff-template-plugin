@@ -1,0 +1,40 @@
+{
+  "name": "devdiff-template-plugin",
+  "version": "1.0.0",
+  "description": "Official starter template for building DevDiff plugins with lifecycle hooks, custom commands, and configuration schemas",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "homepage": "https://github.com/EldrexDelosReyesBula/devdiff-template-plugin#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EldrexDelosReyesBula/devdiff-template-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EldrexDelosReyesBula/devdiff-template-plugin/issues"
+  },
+  "author": "Eldrex Delos Reyes Bula <eldrexdelosreyesbula@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "devdiff",
+    "devdiff-plugin",
+    "template",
+    "plugin-sdk",
+    "changelog",
+    "ai"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@eldrex/plugin-sdk": "^1.6.1"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.6"
+  }
+}
